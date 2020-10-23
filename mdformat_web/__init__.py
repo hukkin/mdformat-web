@@ -1,3 +1,4 @@
+from bs4 import BeautifulSoup
 import cssbeautifier
 import jsbeautifier
 
@@ -10,3 +11,8 @@ def format_js(unformatted: str, _info_str: str) -> str:
 
 def format_css(unformatted: str, _info_str: str) -> str:
     return cssbeautifier.beautify(unformatted) + "\n"
+
+
+def format_html(unformatted: str, _info_str: str) -> str:
+    soup = BeautifulSoup(unformatted, features="lxml")
+    return soup.prettify() + "\n"

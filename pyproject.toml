@@ -7,7 +7,7 @@ build-backend = "poetry.core.masonry.api"
 name = "mdformat-web"
 version = "0.0.1"  # DO NOT EDIT THIS LINE MANUALLY. LET bump2version UTILITY DO IT
 authors = ["Taneli Hukkinen <hukkinj1@users.noreply.github.com>"]
-description = "Mdformat plugin to format JS and CSS code blocks"
+description = "Mdformat plugin to format JS, HTML and CSS code blocks"
 repository = "https://github.com/hukkinj1/mdformat-web"
 readme = "README.md"
 license = "MIT"
@@ -30,12 +30,14 @@ packages = [
 "javascript" = "mdformat_web:format_js"
 "js" = "mdformat_web:format_js"
 "css" = "mdformat_web:format_css"
+"html" = "mdformat_web:format_html"
 
 [tool.poetry.dependencies]
 python = "^3.6"
 mdformat = ">=0.3.5"
 jsbeautifier = "^1.13.0"
 cssbeautifier = "^1.13.0"
+beautifulsoup4 = { version = "^4.9.3", extras = ["lxml"] }
 
 [tool.poetry.dev-dependencies]
 # Tests

@@ -53,3 +53,35 @@ p {
 ```
 """
     assert mdformat.text(unformatted_md, codeformatters={"css"}) == formatted_md
+
+
+def test_html():
+    unformatted_md = """~~~html
+<ul>
+<li>foo</li>
+</ul>
+<hr />
+<ul>
+<li>bar</li>
+</ul>
+~~~
+"""
+    formatted_md = """```html
+<html>
+ <body>
+  <ul>
+   <li>
+    foo
+   </li>
+  </ul>
+  <hr/>
+  <ul>
+   <li>
+    bar
+   </li>
+  </ul>
+ </body>
+</html>
+```
+"""
+    assert mdformat.text(unformatted_md, codeformatters={"html"}) == formatted_md
