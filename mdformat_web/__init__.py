@@ -16,3 +16,8 @@ def format_css(unformatted: str, _info_str: str) -> str:
 def format_html(unformatted: str, _info_str: str) -> str:
     soup = BeautifulSoup(unformatted, features="lxml")
     return soup.prettify() + "\n"
+
+
+def format_xml(unformatted: str, _info_str: str) -> str:
+    soup = BeautifulSoup(unformatted, features="lxml-xml")
+    return soup.prettify() + "\n"
