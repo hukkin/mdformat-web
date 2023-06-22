@@ -67,21 +67,17 @@ def test_html():
 ~~~
 """
     formatted_md = """```html
-<html>
- <body>
-  <ul>
-   <li>
-    foo
-   </li>
-  </ul>
-  <hr/>
-  <ul>
-   <li>
-    bar
-   </li>
-  </ul>
- </body>
-</html>
+<ul>
+ <li>
+  foo
+ </li>
+</ul>
+<hr/>
+<ul>
+ <li>
+  bar
+ </li>
+</ul>
 ```
 """
     assert mdformat.text(unformatted_md, codeformatters={"html"}) == formatted_md

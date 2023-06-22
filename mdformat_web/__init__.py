@@ -14,7 +14,8 @@ def format_css(unformatted: str, _info_str: str) -> str:
 
 
 def format_html(unformatted: str, _info_str: str) -> str:
-    soup = BeautifulSoup(unformatted, features="lxml")
+    # Use html.parser instead of lxml or html5lib to avoid adding an extra doctype.
+    soup = BeautifulSoup(unformatted, features="html.parser")
     return soup.prettify() + "\n"
 
 
