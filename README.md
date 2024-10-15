@@ -1,4 +1,4 @@
-[![Build Status](https://github.com/hukkinj1/mdformat-web/workflows/Tests/badge.svg?branch=master)](<https://github.com/hukkinj1/mdformat-web/actions?query=workflow%3ATests+branch%3Amaster+event%3Apush>)
+[![Build Status](https://github.com/hukkin/mdformat-web/actions/workflows/tests.yaml/badge.svg?branch=master)](<https://github.com/hukkin/mdformat-web/actions?query=workflow%3ATests+branch%3Amaster+event%3Apush>)
 [![PyPI version](<https://img.shields.io/pypi/v/mdformat-web>)](<https://pypi.org/project/mdformat-web>)
 
 # mdformat-web
