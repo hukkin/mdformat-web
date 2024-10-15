@@ -85,7 +85,6 @@ def test_html():
 
 def test_xml():
     unformatted_md = """~~~xml
-<?xml version="1.0" encoding="UTF-8"?>
 <note>
 <to>Tove</to><from>Jani</from>
 <heading>Reminder</heading><body>Don't forget me this weekend!</body>
@@ -93,20 +92,11 @@ def test_xml():
 ~~~
 """
     formatted_md = """```xml
-<?xml version="1.0" encoding="utf-8"?>
 <note>
- <to>
-  Tove
- </to>
- <from>
-  Jani
- </from>
- <heading>
-  Reminder
- </heading>
- <body>
-  Don\'t forget me this weekend!
- </body>
+  <to>Tove</to>
+  <from>Jani</from>
+  <heading>Reminder</heading>
+  <body>Don't forget me this weekend!</body>
 </note>
 ```
 """

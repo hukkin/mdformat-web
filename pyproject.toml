@@ -34,11 +34,11 @@ packages = [
 "xml" = "mdformat_web:format_xml"
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = ">=3.9"
 mdformat = ">=0.3.5"
-jsbeautifier = "^1.13.0"
-cssbeautifier = "^1.13.0"
-beautifulsoup4 = { version = "^4.9.3", extras = ["lxml"] }
+jsbeautifier = ">=1.13.0"
+cssbeautifier = ">=1.13.0"
+beautifulsoup4 = ">=4.9.3"
 
 [tool.poetry.dev-dependencies]
 # Tests
