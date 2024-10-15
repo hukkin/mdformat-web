@@ -7,7 +7,8 @@
 ## Description
 mdformat-web is an [mdformat](https://github.com/executablebooks/mdformat) plugin
 that makes mdformat format JavaScript and CSS code blocks with [JS Beautifier](https://github.com/beautify-web/js-beautify),
-and HTML and XML with [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/).
+HTML with [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/),
+and XML using the Python standard library.
 
 ## Installing
 ```bash
